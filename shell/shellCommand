@@ -1,0 +1,5 @@
+// count the number of lines for one file
+cat xxx.c | wc -l
+
+
+
