@@ -36,6 +36,19 @@ node *create()
 	return head;
 }
 
+int length(node *head)
+{
+
+	int num = 1;
+	node *q = head->next;
+	while(q != NULL)
+	{
+		num++;	
+		q = q->next;
+	}
+	return num;
+}
+
 int main()
 {
 	node *p = create();
@@ -48,4 +61,15 @@ int main()
 		printf("%d,", q->data);
 		q = q->next;	
 	}
+
+	printf("length is :%d\n", length(p));
 }
+
+
+
+
+
+
+
+
+
