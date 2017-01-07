@@ -1,0 +1,12 @@
+void read_til_ctrl(FILE*);
+int process_rq(char*, int);
+void header(FILE*, char*);
+void cannot_do(int );
+void do_404(char *, int );
+int isadir(char *);
+int not_exist(char*);
+void do_ls(char *, int);
+char* file_type(char*);
+int ends_in_cgi(char* );
+void do_exec(char* , int );
+void do_cat(char* , int );
